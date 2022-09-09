@@ -1,0 +1,315 @@
+
+#page-wrap { width: 750px; margin: 0 auto; }
+
+hr {
+  height: 1px;
+  background-color: black;
+}
+
+.delete-wpr { position: relative; }
+	.delete { display: block; color: #000; text-decoration: none; position: absolute; background: #EEEEEE; font-weight: bold; padding: 0px 3px; border: 1px solid; top: -6px; left: -22px; font-family: Verdana; font-size: 12px; }
+
+	/* Extra CSS for Print Button*/
+	.button {
+		display: -webkit-box;
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		overflow: hidden;
+		margin-top: 20px;
+		padding: 12px 12px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-transition: all 60ms ease-in-out;
+		transition: all 60ms ease-in-out;
+		text-align: center;
+		white-space: nowrap;
+		text-decoration: none !important;
+
+		color: #fff;
+		border: 0 none;
+		border-radius: 4px;
+		font-size: 14px;
+		font-weight: 500;
+		line-height: 1.3;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		-webkit-box-pack: center;
+		-webkit-justify-content: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-webkit-align-items: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-flex: 0;
+		-webkit-flex: 0 0 160px;
+		-ms-flex: 0 0 160px;
+		flex: 0 0 160px;
+	}
+	.button:hover {
+		-webkit-transition: all 60ms ease;
+		transition: all 60ms ease;
+		opacity: .85;
+	}
+	.button:active {
+		-webkit-transition: all 60ms ease;
+		transition: all 60ms ease;
+		opacity: .75;
+	}
+	.button:focus {
+		outline: 1px dotted #959595;
+		outline-offset: -4px;
+	}
+
+	.button.-regular {
+		color: #202129;
+		background-color: #edeeee;
+	}
+	.button.-regular:hover {
+		color: #202129;
+		background-color: #e1e2e2;
+		opacity: 1;
+	}
+	.button.-regular:active {
+		background-color: #d5d6d6;
+		opacity: 1;
+	}
+
+	.button.-dark {
+		color: #FFFFFF;
+		background: #333030;
+	}
+	.button.-dark:focus {
+		outline: 1px dotted white;
+		outline-offset: -4px;
+	}
+
+	@media print
+	{
+		.no-print, .no-print *
+		{
+			display: none !important;
+		}
+	}
+
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font: 14px/1.4 Helvetica, Arial, sans-serif;
+    }
+
+    #page-wrap {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+    textarea {
+        border: 0;
+        font: 14px Helvetica, Arial, sans-serif;
+        overflow: hidden;
+        resize: none;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table td,
+    table th {
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+    tr.noBorder td {
+        border: 0;
+    }
+
+    td.Border td {
+        border: 1px;
+    }
+
+    #header {
+        height: 15px;
+        width: 100%;
+        margin: 20px 0;
+        background: #222;
+        text-align: center;
+        color: white;
+        font: bold 15px Helvetica, Sans-Serif;
+        text-decoration: uppercase;
+        letter-spacing: 20px;
+        padding: 8px 0px;
+    }
+
+    #address {
+        width: 250px;
+        height: 150px;
+        float: left;
+    }
+
+    #customer {
+        overflow: hidden;
+    }
+
+    #logo {
+        text-align: right;
+        float: right;
+        position: relative;
+        margin-top: 25px;
+        border: 1px solid #fff;
+        max-width: 540px;
+        overflow: hidden;
+    }
+
+    #customer-title {
+        font-size: 20px;
+        font-weight: bold;
+        float: left;
+    }
+
+    #meta {
+        margin-top: 1px;
+        width: 100%;
+        float: right;
+    }
+
+    #meta td {
+        text-align: right;
+    }
+
+    #meta td.meta-head {
+        text-align: left;
+        background: #6c757d;
+    }
+
+    #meta td textarea {
+        width: 100%;
+        height: 20px;
+        text-align: right;
+    }
+
+    #signing {
+        margin-top: 0px;
+        width: 100%;
+        float: center;
+    }
+
+    #signing td {
+        text-align: center;
+    }
+
+    #signing td.signing-head {
+        text-align: center;
+        background: #eee;
+    }
+
+    #signing td textarea {
+        width: 100%;
+        height: 20px;
+        text-align: center;
+    }
+
+    #items {
+        clear: both;
+        width: 100%;
+        margin: 30px 0 0 0;
+        border: 1px solid black;
+    }
+
+    #items th {
+        background: #6c757d;
+    }
+
+    #items textarea {
+        width: 80px;
+        height: 50px;
+    }
+
+    #items tr.item-row td {
+        vertical-align: top;
+    }
+
+    #items td.description {
+        width: 300px;
+    }
+
+    #items td.item-name {
+        width: 175px;
+    }
+
+    #items td.description textarea,
+    #items td.item-name textarea {
+        width: 100%;
+    }
+
+    #items td.total-line {
+        border-right: 0;
+        text-align: right;
+    }
+
+    #items td.total-value {
+        border-left: 0;
+        padding: 10px;
+    }
+
+    #items td.total-value textarea {
+        height: 20px;
+        background: none;
+    }
+
+    #items td.balance {
+        background: #6c757d;
+    }
+
+    #items td.blank {
+        border: 0;
+    }
+
+    #terms {
+        text-align: center;
+        margin: 20px 0 0 0;
+    }
+
+    #terms h5 {
+        text-transform: uppercase;
+        font: 13px Helvetica, Sans-Serif;
+        letter-spacing: 10px;
+        border-bottom: 1px solid black;
+        padding: 0 0 8px 0;
+        margin: 0 0 8px 0;
+    }
+
+    #terms textarea {
+        width: 100%;
+        text-align: center;
+    }
+
+
+
+    .delete-wpr {
+        position: relative;
+    }
+
+    .delete {
+        display: block;
+        color: #000;
+        text-decoration: none;
+        position: absolute;
+        background: #EEEEEE;
+        font-weight: bold;
+        padding: 0px 3px;
+        border: 1px solid;
+        top: -6px;
+        left: -22px;
+        font-family: Verdana;
+        font-size: 12px;
+    }

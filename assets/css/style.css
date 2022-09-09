@@ -1,0 +1,256 @@
+ *{
+  box-sizing:border-box;
+ }
+
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.input-field .prefix {
+  top: 14px;
+}
+.error {
+  padding: 0 10px;
+  color: #f00;
+  font-weight: bold;
+    font-size: 14px;
+}
+
+.errors{
+	color:red;
+	font-weight: bold;
+    padding: 0;
+}
+
+fieldset{
+  padding: 30px !important;
+}
+
+
+.captcha-box{
+  padding: 25px 0px;
+}
+
+.sign-input{
+  /*display: inline-block;*/
+  width:55% !important;
+}
+
+#userForm{
+  margin-left: 10px;
+}
+
+#userForm h5{
+  margin-left: -10px;
+}
+
+.signup-field{
+  position: relative;
+}
+
+.signup-field .prefix {
+  position: absolute;
+    top: 30px;
+  left: -30px;
+}
+
+.shift-field{
+  margin-left: 45px;
+}
+
+.error.shift-field{
+  padding-left: 0;
+}
+
+.shift-field .captcha-box {
+  padding: 10px 0px;
+}
+
+.container{
+  position:relative;
+  width: 95%;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.right-settings{
+    float: right;
+  display: inline-block;
+}
+
+.right-settings>li{
+  float: left;
+}
+
+.right-settings>li:first-child{
+  margin-right: 20px;
+}
+
+.text-area{
+    width: 468px !important;
+}
+
+.mail-to{
+  width: initial;
+}
+
+.dataTables_length select{
+  width:60%;
+}
+
+.dataTables_wrapper .dataTables_length {
+    text-align: right;
+    float: right !important;
+}
+
+.dataTables_wrapper .dataTables_filter {
+    float: left !important;
+    text-align: left;
+}
+
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0 !important;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+   
+   border-bottom: 1px solid #d0d0d0 !important; 
+}
+
+table.dataTable.no-footer {
+    border-bottom: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #fff !important;
+    border: none;
+    background-color: white;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ef5350), color-stop(100%, #b71c1c));
+    background: -webkit-linear-gradient(top, #ef5350 0%, #b71c1c 100%);
+    background: -moz-linear-gradient(top, #ef5350 0%, #b71c1c 100%);
+    background: -ms-linear-gradient(top, #ef5350 0%, #b71c1c 100%);
+    background: -o-linear-gradient(top, #ef5350 0%, #b71c1c 100%);
+    background: linear-gradient(to bottom, #ef5350 0%, #b71c1c 100%);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    box-sizing: border-box;
+    display: inline-block;
+    min-width: 1.5em;
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    text-align: center;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #333 !important;
+    border: 1px solid transparent;
+    border-radius: 2px;
+}
+
+.ColVis_collection>li>label>input{
+       position: static !important; 
+     left: 0 !important; 
+     visibility: visible !important; 
+}
+
+.user-count ul{
+  width: 100%;
+}
+
+.user-count li{
+  display: inline-block;
+  width: 19.5%;
+  padding: 22px 0;
+  border-radius: 5px;
+}
+
+@media screen and (max-width:601px){
+  .user-count li{
+  padding: 22px 0;
+  } 
+  .user-count li h5{
+  font-size: 18px;
+  }
+}
+@media screen and (max-width:321px){
+  .user-count li{
+  padding: 12px 0;
+  width: 18.5%;
+  } 
+  .user-count li h5{
+  font-size: 10px;
+  }
+  .right-settings {
+    float: left;
+  }
+}
+
+#profileForm{
+  margin-left: 12px;
+}
+
+.profile-avatar>img{
+  max-width: 150px;
+  height: auto;
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 0px !important;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding: 10px 0px !important;
+}
+
+#th-id{
+  width: 40px !important;
+}
+
+#th-active{
+  width: 60px !important; 
+}
+
+#th-admin{
+  width: 60px !important;
+}
+
+#th-manager{
+  width: 90px !important;
+}
+
+#th-subscriber{
+  width: 100px !important;
+}
+
+#th-lastlogin{
+  width: 150px !important;
+}
+
+#th-actions{
+  width: 180px !important;
+  min-width: 180px !important;
+}
+
+@media only screen and (max-width: 992px){
+  #th-id,#th-name,#th-email,#th-active,#th-admin,#th-manager,#th-subscriber,#th-lastlogin,#th-actions{
+    width: 100% !important;
+  }
+}
+
+.badge-notify{
+   background:red;
+   position:relative;
+   top: -20px;
+   left: -35px;
+}

@@ -1,0 +1,15 @@
+.app-print-data-list-unico {
+    margin-top: 1px;
+    height: 15px;
+}
+
+.app-print-data-list-unico>div:nth-child(1) {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.app-print-data-list-unico>div {
+    float: left;
+    font-size: 14px;
+}
